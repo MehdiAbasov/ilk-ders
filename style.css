@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+}
+
+/* start navbar */
+
+.my-navbar {
+    background-color: #fff;
+    height: 70px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.my-navbar .my-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #000;
+}
+
+/* end navbar */
+
+.hero .row {
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-side h1 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.left-side p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #666;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+}
+
+.btns a {
+    text-decoration: none;
+    background-color: black;
+    padding: 13px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #fff;
+}
+
+.btns a i {
+    padding-left: 10px;
+}
+
+.ikinci-link {
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.right-side img {
+    width: 100%;
+}
+
+.menu-icon {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d2d2;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .left-side h1 {
+        max-width: 600px;
+    }
+    .left-side p {
+        max-width: 600px;
+    }
+}
+
+.responsive-navbar {
+    display: none;
+    width: 100%;
+    transform: translateX(-1400px);
+    transition: 0.7s;
+    height: 100vh;
+    position: fixed;
+}
+
+.transform {
+    transform: translateX(0);
+}
+
+.resnav-container {
+    position: relative;
+    background-color: #000;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.res-icon {
+    color: #fff;
+    font-size: 25px;
+    background-color: #838383;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    cursor: pointer;
+    /* 
+        top
+        bottom
+        right
+        left
+    */
+}
+
+.respons-nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+    gap: 10px;
+}
+
+.respons-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .responsive-navbar {
+        display: flex;
+    }
+    .left-side h1 {
+        font-size: 50px;
+    }
+
+    .left-side p {
+        font-size: 18px;
+    }
+
+    .btns a {
+        width: 130px;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* services */
+
+.service-top {
+    text-align: center;
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.service-bottom{
+    padding: 40px 0;
+}
+
+.service-top span {
+    color: rgb(255, 64, 96);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.service-top h1 {
+    font-size: 40px;
+    max-width: 600px;
+}
+
+.service-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-bottom ul li {
+    font-weight: 700;
+    font-size: 22px;
+    list-style: square;
+}
+
+.service-bottom .col-xl-4{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-bottom .col-xl-4 p{
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.right-side-img img{
+    width: 60px;
+}
+
+.carousel-item .right-side{
+    padding:  100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-item .left-side{
+    padding: 20px;
+}
+
+.right-side-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs-bottom-right-side{
+    position: relative;
+    width: 85px;
+}
+
+.rs-bottom-right-side button{
+    background-color: #000;
+    height: 40px;
+    width: 40px;
+}
+
